@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Aula03Login
+namespace telinha01
 {
     public partial class Form1 : Form
     {
@@ -27,16 +27,12 @@ namespace Aula03Login
             {
                 MessageBox.Show("Login Feito com Sucesso");
                 panel_Saldo.Show();
+                this.WindowState = FormWindowState.Maximized;
             }
-            else 
+            else
             {
                 MessageBox.Show("Usuario ou Senha incorreto ");
             }
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
